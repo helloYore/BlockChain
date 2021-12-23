@@ -55,21 +55,21 @@ public class NoobChain {
 
     //测试
     public static void main(String[] args) {
-//        Block firstBlock = new Block("I am Lee 1", "0");
+//        Block firstBlock = new Block("I am  1", "0");
 //        System.out.println("Hash for block1: " + firstBlock.hash);
-//        Block secondBlock = new Block("I am yang 2", firstBlock.hash);
+//        Block secondBlock = new Block("I am 2", firstBlock.hash);
 //        System.out.println("Hash for block2: " + secondBlock.hash);
-//        Block thirdBlock = new Block("I am Li yang 3", secondBlock.hash);
+//        Block thirdBlock = new Block("I am  3", secondBlock.hash);
 //        System.out.println("Hash for block3: " + thirdBlock.hash);
-        blockChain.add(new Block("I am Lee 1", "0"));
+        blockChain.add(new Block("I am hello 1", "0"));
         System.out.println("Try to Mine block 1");
         blockChain.get(0).mineBlock(difficulty);   //创建新区块时候需要触发mineBlock()方法
 
-        blockChain.add(new Block("I am yang 2", blockChain.get(blockChain.size() - 1).hash));
+        blockChain.add(new Block("I am yore 2", blockChain.get(blockChain.size() - 1).hash));
         System.out.println("Try to Mine block 2");
         blockChain.get(1).mineBlock(difficulty);
 
-        blockChain.add(new Block("I am Li yang  3", blockChain.get(blockChain.size() - 1).hash));
+        blockChain.add(new Block("I am helloYore  3", blockChain.get(blockChain.size() - 1).hash));
         System.out.println("Try to Mine block 3");
         blockChain.get(2).mineBlock(difficulty);
 
