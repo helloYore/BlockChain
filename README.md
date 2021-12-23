@@ -1,6 +1,6 @@
 # BlockChain
 
-** A very simple BlockChain for study purposes.(Based on Java) **
+**A very simple BlockChain for study purposes.(Based on Java)**
 
 # Result Show:
 
